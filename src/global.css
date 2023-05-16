@@ -1,0 +1,124 @@
+body {
+  font-family: 'Press Start 2P';
+}
+main {
+  margin-bottom: 79px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  column-gap: 10px;
+  row-gap: 30px;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 800px;
+}
+
+.card {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.card-header {
+  border: 2px solid #000;
+  text-align: center;
+}
+
+.card-header img {
+  width: 90%;
+}
+
+h1 {
+  font-size: 16px;
+  text-align: center;
+  background-color: #dadada;
+  padding: 15px 0;
+  margin: 0 0 10px;
+}
+
+h2 {
+  font-size: 13px;
+}
+
+p {
+  font-size: 11px;
+  line-height: 16px;
+  color: #575757;
+}
+
+.card-body p {
+  overflow: hidden;
+  height: 120px;
+}
+
+.card-body button {
+  width: 100%;
+  padding: 9px 0;
+  background-color: transparent;
+}
+
+.card-body button:hover {
+  background-color: #eee;
+}
+
+button:hover {
+  border-top: 2px solid rgba(0, 0, 0, 0.3);
+  border-left: 2px solid rgba(0, 0, 0, 0.3);
+  border-bottom: none;
+  border-right: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Press Start 2P';
+  font-size: 11px;
+  border-radius: 2px;
+  outline: solid 2px #000000;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-right: 2px solid rgba(0, 0, 0, 0.3);
+  border-top: none;
+  border-left: none;
+  transition: background 100ms ease-out;
+}
+
+.cart-btn {
+  position: fixed;
+  bottom: 20px;
+  left: calc(50% - 105px);
+  text-align: center;
+  width: 210px;
+}
+
+.cart-btn button {
+  padding: 9px 20px;
+  background-color: #00a2ff;
+  color: white;
+}
+
+.cart-btn button:hover {
+  background-color: #1a97df;
+}
+
+.message {
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+  padding: 15px 0;
+}
+
+.error {
+  color: #c03434;
+  background-color: #ffeded;
+
+  animation: zoomin 300ms ease-in;
+}
+
+@keyframes zoomin {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
